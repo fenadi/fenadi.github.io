@@ -1,0 +1,404 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	background-image: url(img/interior5.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header nav{
+	background: rgba(0,0,0,.5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2% 5%;
+}
+
+header nav .brand{
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: .5s;
+}
+
+header nav .brand:hover{
+	transform: scale(1.1);
+}
+
+header nav ul{
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+}
+
+header .nav-link{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.nav-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+
+.toggle{
+	display: none;
+}
+
+.fa-bars{
+	columns: #fff;
+}
+
+.banner{
+	background: rgba(0,0,0,.5);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner h1{
+	font-size: 10vmin;
+	color: #fff;
+	text-align: center;
+}
+
+.banner p{
+	font-size: 3vmin;
+	color: #fff;
+	width: 100vmin;
+	text-align: center;
+}
+
+.banner button{
+	background: transparent;
+	padding: 10px 25px;
+	cursor: pointer;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	transition: .5s;
+}
+
+.banner button:hover{
+	transform: scale(1.1);
+}
+
+.project{
+	width: 100%;
+	margin: 100px 0;
+	padding: 0 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.project .heading{
+	text-align: center;
+}
+
+.project .modern{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.project .modern .modern-content{
+	margin-right: 50px;
+	text-align: right;
+}
+
+.project .modern img{
+	width: 55%;
+}
+
+.project .classic{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.project .classic .classic-content{
+	margin-left: 50px;
+	text-align: left;
+}
+
+.project .classic img{
+	width: 55%;
+}
+
+.project .colorful{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.project .colorful .colorful-content{
+	margin-right: 50px;
+	text-align: right;
+}
+
+.project .colorful img{
+	width: 55%;
+}
+
+.service{
+	background-image: url(img/vas.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	padding: 10% 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.service h2{
+	color: #fff;
+}
+
+.service .text{
+	width: 50%;
+	color: #fff;
+}
+
+.service .container-card{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.service .container-card .card{
+	background: #fff;
+	width: 30%;
+	margin: 40px 0;
+	padding: 10px;
+	text-align: center;
+	transition: .5s;
+}
+
+.service button{
+	background: black;
+	padding: 10px 25px;
+	cursor: pointer;
+	border:none;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	transition: .5s;
+}
+
+.service button:hover{
+	transform: scale(1.1);
+}
+
+.service .container-card .card:hover{
+	transform: scale(1.1);
+}
+
+.fa-building{
+	font-size: 100px;
+}
+
+.fa-home{
+	font-size: 100px
+}
+
+.fa-drafting-compass{
+	font-size: 100px;
+}
+
+.about{
+	padding: 0 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.about .description{
+	width: 50%;
+}
+
+.about img{
+	width: 40%;
+}
+
+.contact{
+	background: #000;
+	padding: 5%;
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+}
+
+form{
+	width: 50%;
+}
+
+input{
+	background: #000;
+	width: 100%;
+	height: 50px;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 5px 20px;
+	color: #fff;
+}
+
+textarea{
+	background: #000;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 20px;
+	color: #fff;
+}
+
+.contact button{
+	background: transparent;
+	padding: 10px 25px;
+	cursor: pointer;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	transition: .5s;
+}
+
+.contact button:hover{
+	transform: scale(1.1);
+}
+
+footer{
+	background: black;
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+@media (max-width: 768px){
+	nav ul li{
+		display: none;
+	}
+
+	.toggle{
+		display: block;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	.project .modern, .classic, .colorful{
+		flex-direction: column;
+	}
+
+	.project .modern .modern-content{
+		width: 100%;
+		margin-bottom: 30px;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.project .modern img{
+		width: 90%;
+		margin: 20px auto;
+	}
+
+	.project .classic .classic-content{
+		width: 100%;
+		margin-bottom: 30px;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.project .classic img{
+		width: 90%;
+		margin: 20px auto;
+	}
+
+	.project .colorful .colorful-content{
+		width: 100%;
+		margin-bottom: 30px;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.project .colorful img{
+		width: 90%;
+		margin: 20px auto;
+	}
+
+	.service .text{
+		width: 100%;
+		text-align: center;
+	}
+
+	.service .container-card{
+		flex-direction: column;
+	}
+
+	.service .container-card .card{
+		width: 60%;
+		margin: 30px auto;
+	}
+
+	.about{
+		flex-direction: column;
+	}
+
+	.about .description{
+		width: 100%;
+		margin: 20px 10px;
+	}
+
+	.about img{
+		display: none;
+	}
+
+	.contact{
+		flex-direction: column;
+	}
+
+	form{
+		width: 100%;
+	}
+}
